@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<header class="container">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/"> Ice Coder
+            <br />Developer</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                    <a class="nav-link" href="/">
+                        <button type="button" class="btn btn-outline-dark"> Home</button>
+                    </a>
+                    <a class="nav-link" href="/aboutme">
+                        <button type="button" class="btn btn-outline-dark"> About</button>
+                    </a>
+                    <a class="nav-link" href="/contactme">
+                        <button type="button" class="btn btn-outline-dark"> Contact</button>
+                    </a>
+                </div>
+                </a>
+        </ul>
+    </nav>
+    <p>Página: <%= typeof pagina !='undefined' ? pagina: 'Home' %>
+    </p>
+</header>
+</html>

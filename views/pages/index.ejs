@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<body class="container">
+    <%- include('../partials/head'); %>
+        <div>
+            <%- include('../partials/header'); %>
+                <main>
+                    <div class="text-center">
+                        <h1> &#128376 Developing</h1>
+                        <p> Style Security Apps </p>
+                        <p>
+                            <%= subtitle %>
+                        </p>
+                    </div>
+                    <div>
+                        <ul>
+                            <% qualitys.forEach(function (quality){ %>
+                                <li>
+                                    <strong>
+                                        <%= quality.title %>
+                                    </strong>
+                                    <%= quality.message %>
+                                </li>
+                                <% }) %>
+                        </ul>
+                    </div>
+                </main>
+                <%- include('../partials/footer'); %>
+        </div>
+</body>
+</html>
